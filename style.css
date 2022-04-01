@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color:aqua;
+    font-size: 2rem;
+    padding: 1.2rem;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+.rgb_value {
+    font-size: 4rem;
+}
+
+.section {
+    max-width: 45%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.difficulty {
+    display: flex;
+    min-width: 25%;
+    justify-content: space-between;
+}
+.difficulty > span, .colors_play {
+    padding: 0.3rem 0.5rem;
+}
+
+.colors_play:hover, 
+.easy:hover, 
+.hard:hover {
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.colors {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.shades_container {
+    width: 45%;
+    height: 12vw;
+    transition:  all 0.3s ease-out;
+}
+
+.shade {
+    width: 27%;
+    height: 12vw;
+    background-color: brown;
+    border-radius: 2vw;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+.two {
+    display: none;
+}
+.trans {
+    height: calc(24vw + 2rem);
+}
+
+.color_section {
+    padding: 1rem 0;
+    background-color: #302a29;
+    height: calc(100vh - 223.2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.chances, .try_again {
+    position: absolute;
+    color: cyan;
+}
+
+.chances {
+    top: 3%;
+    right: 6%;
+}
+
+.try_again {
+    top: 3%;
+    left: 6%;
+    transition: all 0.4s ease;
+}
+
+.colors + .colors {
+    margin-top: 2rem;
+}
+
+.again {
+    border-radius: 50px;
+}
+
+.again:hover {
+    background-color: aqua;
+    color: #302a29;
+    cursor: pointer;
+}
